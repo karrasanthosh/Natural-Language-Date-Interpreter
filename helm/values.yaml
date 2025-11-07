@@ -1,0 +1,29 @@
+# Default values for nl-date-interpreter Helm chart.
+
+backend:
+  image: nl-date-interpreter-backend:latest
+  replicaCount: 1
+  service:
+    type: ClusterIP
+    port: 8080
+  env:
+    SPRING_DATASOURCE_URL: jdbc:mysql://nl-date-mysql:3306/nldate?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    SPRING_DATASOURCE_USERNAME: nldateuser
+    SPRING_DATASOURCE_PASSWORD: nldatepw
+    SPRING_JPA_HIBERNATE_DDL_AUTO: update
+
+frontend:
+  image: nl-date-interpreter-frontend:latest
+  replicaCount: 1
+  service:
+    type: ClusterIP
+    port: 3000
+
+mysql:
+  image: mysql:8.0
+  rootPassword: rootpw
+  user: nldateuser
+  password: nldatepw
+  database: nldate
+  service:
+    port: 3306

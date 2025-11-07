@@ -1,0 +1,4 @@
+apiVersion: v2
+name: nl-date-interpreter
+version: 0.1.0
+description: Helm chart for deploying the Natural Language Date Interpreter (Spring Boot backend, React frontend, MySQL) on OpenShift/CRC

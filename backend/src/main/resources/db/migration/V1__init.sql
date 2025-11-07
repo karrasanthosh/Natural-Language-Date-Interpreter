@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS request_entity (
+    id SERIAL PRIMARY KEY,
+    request_text VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
