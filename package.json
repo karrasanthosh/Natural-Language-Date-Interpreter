@@ -1,0 +1,24 @@
+{
+  "name": "nldi",
+  "version": "1.0.0",
+  "description": "task given by markus for learning",
+  "keywords": [
+    "Natural-Language-Date-Interpreter"
+  ],
+  "homepage": "https://github.com/karrasanthosh/Natural-Language-Date-Interpreter#readme",
+  "bugs": {
+    "url": "https://github.com/karrasanthosh/Natural-Language-Date-Interpreter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karrasanthosh/Natural-Language-Date-Interpreter.git"
+  },
+  "license": "MIT",
+  "author": "sai santhosh karra",
+  "type": "overall",
+  "main": "no",
+  "scripts": {
+    "start:frontend": "cd ./frontend && npm start",
+    "start:backend": "cd ./backend && gradlew.bat bootrun"
+  }
+}
